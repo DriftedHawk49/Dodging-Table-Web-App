@@ -160,6 +160,7 @@ padding: 20px;
         border-radius: 5px;
         border-width: 1px;
         border-style: solid;
+        font-weight: 900;
         padding: 9px 25px;
         color: $text_blue;
     }
@@ -197,6 +198,33 @@ padding: 20px;
 
     }
 }
+
+.score_tile{
+    display: block !important;
+    text-align: center;
+
+}
+
+.easy_badge{
+    background-color: $light_green;
+    border-color: $dark_green;
+}
+
+.int_badge{
+    background-color: $medium_blue;;
+    border-color: $dark_blue;
+}
+
+.hard_badge{
+    background-color: $light_red;
+    border-color: $dark_red;
+}
+
+.god_badge{
+    background-color: $light_violet;
+    border-color: $dark_violet;
+}
+
 
 
 input[type=number]::-webkit-outer-spin-button,

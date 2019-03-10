@@ -161,6 +161,7 @@ footer {
   border-radius: 5px;
   border-width: 1px;
   border-style: solid;
+  font-weight: 900;
   padding: 9px 25px;
   color: #283C4E;
 }
@@ -197,6 +198,31 @@ footer {
   text-align: center;
   height: 50px;
   margin: 30px 0px 100px 0px;
+}
+
+.score_tile {
+  display: block !important;
+  text-align: center;
+}
+
+.easy_badge {
+  background-color: #E0FFD9;
+  border-color: #2FFE00;
+}
+
+.int_badge {
+  background-color: #B8EAFF;
+  border-color: #00B4FF;
+}
+
+.hard_badge {
+  background-color: #FFD9D9;
+  border-color: #FF0000;
+}
+
+.god_badge {
+  background-color: #EDD9FF;
+  border-color: #8700FF;
 }
 
 input[type=number]::-webkit-outer-spin-button,
