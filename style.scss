@@ -1,0 +1,343 @@
+$light_blue:#D9F4FF;
+$medium_blue:#B8EAFF;
+$dark_blue:#00B4FF;
+
+$light_green:#E0FFD9;
+$medium_green:#B3FCA2;
+$dark_green:#2FFE00;
+
+$light_red:#FFD9D9;
+$medium_red: #FFB4B4;
+$dark_red:#FF0000;
+
+$light_violet:#EDD9FF;
+$medium_violet:#D7AAFF;
+$dark_violet:#8700FF;
+
+$text_blue:#283C4E;
+$text_orange:#EE5D2F;
+$snow_white: #FCFBFA;
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hidden{
+    display: none;
+}
+
+
+body, html{
+    margin:0px;
+    padding:0px;
+    height:100%;
+    width: 100%;
+    background-color: $snow_white !important;
+}
+
+.logo{
+    width: 57px;
+    height: 48px;
+}
+
+nav{
+    background-color: $light_blue;
+}
+
+.navbar-brand{
+    margin-right: 20px !important;
+}
+
+li{
+    font-weight: 900;
+    color: $text_blue;
+    font-size: 20px;
+}
+
+footer{
+    height: 40px;
+    background-color: $text_blue;
+    color: $snow_white;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right:0;
+    padding: 8px 0px;
+    width: 100vw;
+    font-size: 15px;
+}
+
+.main-text{
+    margin: 100px 50px 50px 50px;
+    text-align: center;
+    h1{
+        margin-bottom: 20px;
+    }
+}
+
+
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+
+    .level-btn{
+        width: 260px;
+        height: 79px;
+        margin: 20px;
+        padding: 21px 0px;
+        font-size: 25px;
+        border-radius: 5px;
+        color: $text_orange;
+    }
+
+    .level-btn:hover{
+        cursor: pointer;
+    }
+
+    .easy{
+        background-color: $light_green;
+    }
+
+    .int{
+        background-color: $light_blue;
+    }
+
+    .hard{
+        background-color: $light_red;
+    }
+
+    .god{
+        background-color: $light_violet;
+    }
+
+    .easy:hover{
+        animation: selection-easy;
+        animation-duration: .2s;
+        animation-fill-mode: forwards;
+    }
+
+    .int:hover{
+        animation: selection-int;
+        animation-duration: .2s;
+        animation-fill-mode: forwards;
+    }
+    .hard:hover{
+        animation: selection-hard;
+        animation-duration: .2s;
+        animation-fill-mode: forwards;
+    }
+    .god:hover{
+        animation: selection-god;
+        animation-duration: .2s;
+        animation-fill-mode: forwards;
+    }
+}
+
+.actual_game{
+width: 80%;
+background-color: $light_blue;
+border: 1px solid $dark_blue;
+border-radius: 5px;
+margin: 70px auto;
+padding: 20px;
+
+
+    .score_indicator{
+        padding: 9px 15px;
+        background-color: $light_violet;
+        border: 1px solid $medium_violet;
+        border-radius: 5px;
+        font-weight: 900;
+        display: inline-block;
+    }
+
+    .level_indicator{
+        float: right;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        padding: 9px 25px;
+        color: $text_blue;
+    }
+    .timer{
+        width: 97px;
+        margin: 20px auto;
+    }
+
+    .display_timer{
+        font-weight: 900;
+        font-size: 20px;
+        display: block;
+        text-align: center
+    }
+    
+    .question{
+        width: 90%;
+        margin: 20px auto;
+        text-align: center;
+        border-radius: 5px;
+        background-color: white;
+        font-size: 80px;
+    }
+
+    .answer_box{
+        text-align: center;
+        input{
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+            text-align: center;
+            height: 50px;
+            margin: 30px 0px 100px 0px;
+        }
+
+    }
+}
+
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+
+
+
+
+@keyframes selection-easy{
+    to{ 
+        color: $text_blue;
+        font-size: 32px;
+        padding-top: 16px;
+        background-color: $medium_green;
+        border: 2px solid $dark_green;
+    }
+}
+
+@keyframes selection-int{
+    to{ 
+        color: $text_blue;
+        font-size: 32px;
+        padding-top: 16px;
+        background-color: $medium_blue;
+        border: 2px solid $dark_blue;
+    }
+}
+
+@keyframes selection-hard{
+    to{ 
+        color: $text_blue;
+        font-size: 32px;
+        padding-top: 16px;
+        background-color: $medium_red;
+        border: 2px solid $dark_red;
+    }
+}
+
+@keyframes selection-god{
+    to{ 
+        color: $text_blue;
+        font-size: 32px;
+        padding-top: 16px;
+        background-color: $medium_violet;
+        border: 2px solid $dark_violet;
+    }
+}
+
+
+.how_to_play{
+    width: 80%;
+    margin: 200px auto;
+
+    h5{
+        padding: 10px;
+        background-color: $light_red;
+        border-radius: 5px;
+    }
+}
+
+.selection-box{
+    text-align: center;
+}
+
+h1{
+    font-weight: 900 !important;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .head1{
+        font-size: 30px;
+    }
+    .head2{
+        font-size: 25px;
+    }
+
+    .actual_game{
+        width: 90%;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    nav{
+        padding: 1px 50px !important; 
+    }
+    .actual_game{
+        width: 80%;
+    }
+
+    .question{
+        span{
+            margin: 0px 30px;
+        }
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    nav{
+        padding: 16px 100px !important;
+    }
+    .actual_game{
+        width: 60%;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    nav{
+        padding: 16px 144px 16px 172px !important; 
+    }
+
+    .main-text{
+        margin: 200px 167px 100px 172px;
+    }
+    .head1{
+        font-size: 60px;
+    }
+    .head2{
+        font-size: 40px;
+        font-weight: 1 !important;
+    }
+
+    .actual_game{
+        width: 40%;
+    }
+
+}
+

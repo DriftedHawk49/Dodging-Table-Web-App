@@ -4,17 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>   
     <title>Document</title>
 </head>
 <body>
-<header class="container">
-    <img
-</header>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html"><img class="logo" src="assets/Logo/1x/Asset 1.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav text-center">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">How To Play</a>
+                      </li>
+                      <li class="nav-item">
+                            <a class="nav-link" href="#">About Creator</a>
+                      </li>
+                    </ul>
+                </div>
+  </nav>
+
+<section class="main_game hidden">
+              <div class="main-text">
+                <h1 class="head1">A Game That Will Sharpen your Memory</h1>
+                <h2 class="head2">Dodging Tables</h2>
+              </div>
+
+              <div class="selection-box">
+                <h3>Choose your Difficulty :</h3>
+                
+                  <ul class="flex-box">
+                    <li class="level-btn easy">Easy</li>
+                    <li class="level-btn int">Intermediate</li>
+                    <li class="level-btn hard">Hard</li>
+                    <li class="level-btn god">God</li>
+                  </ul>
+  </section>              
+ 
+<section class="how_to_play hidden">
+  <h1>
+    How To Play
+  </h1>
+  <p>
+    This game will train you with dodging tables. We all learn tables at our earlier classes, But we all tend to forget them, and with extensive use of calculators, we just avoid tables because we can do multiplication with calculator anyway.
+  </p>
+  <p>
+    This game consists of 4 modes, namely - Easy, Intermediate, Hard and God.
+  </p>
+  <dl>
+    <dt>Easy</dt>
+    <dd>This mode is for Kids upto 5th Standard. It consists questions from multiplication tables of range 2 to 10. 10s are granted for every question, so there's time associated with this game (that is why it is called Dodging tables).</dd>
+    <dt>Intermediate</dt>
+    <dd>This mode is for kids upto 10th standard, It consists questions from multiplication tables of range 2 to 20. 7s are granted for every question. </dd>
+    <dt>Hard</dt>
+    <dd>This mode is for kids upto 12th standard, It consists questions from multiplication tables of range 12 to 25. 5s are granted for every question. </dd>
+    <dt>God</dt>
+    <dd>This mode is for people who are memory champions, or want to be.<br>It consists questions from multiplication tables of range 25 to 50. 5s are granted for every question. </dd>
+  </dl>
+
+  <h5>
+    Enter the Answer within time limit in the given space.
+    While Entering the Digit, you don't have to press any key to submit your answer, it will automatically submit once timer is done.
+  </h5>
+</section>
+
+<section class="actual_game hidden">
+  <div class="score_indicator">Score<br><span class="score_tile"></span></div>
+  <div class="level_indicator">Intermediate</div>
+  <br>
+  <div class="timer"><img class="graphic_timer" src="assets/5s_clock/2x/Asset 7@2x.png"><br>
+  <span class="display_timer"><span id="timer_js">5</span>s</span>
+  </div>
+  <div class="question">
+    <span class="num1">2</span> x <span class="num2">3</span>
+  </div>
+  
+  <div class="answer_box"><input type="number" placeholder="Enter Answer Here"></div>
+  
+</section>
 
 
-    
+
+<section class="scoreboard">
+
+</section>
+
+
+<!-- <footer>
+                Pulkit Sharma. All Rights Reserved. 2019.
+   </footer> -->
 </body>
 </html>
