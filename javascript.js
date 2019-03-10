@@ -382,7 +382,7 @@ function easyWave2Game(){
 
 $('.level-btn').on('click',function(obj){
 	level = obj.currentTarget.innerText;
-	$('.actual_game').removeClass('hidden');
+	$('#actual_game').removeClass('hidden');
 	$('.main_game').addClass('hidden');
 	$('.score_tile')[0].innerText = 0;
 	$('.level_indicator')[0].innerText = level;
