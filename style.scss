@@ -59,10 +59,6 @@ footer{
     background-color: $text_blue;
     color: $snow_white;
     text-align: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right:0;
     padding: 8px 0px;
     width: 100vw;
     font-size: 15px;
@@ -199,6 +195,7 @@ padding: 20px;
     }
 }
 
+
 .score_tile{
     display: block !important;
     text-align: center;
@@ -237,7 +234,9 @@ input[type=number] {
     -moz-appearance:textfield;
 }
 
-
+.box{
+    border: 1px solid black;
+}
 
 
 
@@ -284,7 +283,8 @@ input[type=number] {
 
 .how_to_play{
     width: 80%;
-    margin: 200px auto;
+    height: 100%;
+    margin: 50px auto;
 
     h5{
         padding: 10px;
@@ -301,6 +301,86 @@ h1{
     font-weight: 900 !important;
 }
 
+.lose-game, .scoreboard{
+    
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(255,0,0, 0.5); /* Black w/opacity */
+    z-index: 1;
+    
+
+    .lose-banner{
+        z-index: 2;
+        background-color: rgba(0,0,0, 0.6);
+        border: 5px solid white;
+        color: white;
+        border-radius: 10px;
+        text-align: center;
+        h1{
+            text-align: center;
+            margin: 50px 0px;
+        }
+
+        .grid2{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            span{
+                font-size: 20px;
+                text-align: left;
+            }
+
+            .level-box{
+                text-align: right;
+            }
+        }
+        .restart-button{
+            display: inline-block;
+            background-color: rgba(255,255,255, 0.5);
+            padding: 14px 60px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border-radius: 10px;
+            cursor: pointer; 
+        }
+        
+        a{
+            text-decoration: none;
+            color: #ffffff;
+        }
+    }
+
+}
+
+.scoreboard{
+    background-color: rgba(47,254,0, 0.6);
+    .mainmenu{
+        display: inline-block;
+        letter-spacing: 1px;
+        padding: 13px 0px;
+        
+        background-color: rgba(255,255,255, 0.5); 
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+}
+
+
+
+ul,li{
+    padding: 0px;
+}
+
+
+
+
+
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
     .head1{
@@ -312,16 +392,71 @@ h1{
 
     .actual_game{
         width: 90%;
+        margin-top: 10px;
+    }
+
+    .main-text{
+        margin-top: 40px;
+    }
+
+    h3{
+        font-size: 20px !important;
+    }
+
+    .lose-banner{
+        height: 450px ;
+        h1{
+            font-size: 40px ;
+        }
+        .status{
+            font-size: 20px ;
+            margin-top: 35px;
+        }
+        .restart-button{
+            margin: 0px ;
+            font-size: 25px ;
+        }
+    }
+
+    .mainmenu{
+        width: 150px;
+        font-size: 20px;
+        margin-top: 10px;
     }
 }
 
+
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
-    
+    .actual_game{
+        margin-top: 70px;
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right:0;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+
+    .mainmenu{
+        width: 250px;
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+
+
+    .main-text{
+        margin-top: 100px;
+        h1{
+            font-size: 60px;
+        }
+    }
+    
     nav{
         padding: 1px 50px !important; 
     }
@@ -334,6 +469,30 @@ h1{
             margin: 0px 30px;
         }
     }
+
+    .lose-banner{
+        
+        height: 700px;
+        h1{
+            font-size: 70px;
+        }
+        .status{
+            font-size: 35px;
+            margin-top: 100px;
+        }
+        .restart-button{
+            display: inline-block;
+            background-color: rgba(255,255,255, 0.5);
+            font-size: 35px;
+            padding: 14px 60px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 120px 0px;
+            width: 300px; 
+        }
+    }  
 }
 
 /* Medium Devices, Desktops */

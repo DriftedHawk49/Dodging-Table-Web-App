@@ -22,10 +22,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav text-center">
                       <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">How To Play</a>
+                        <a class="nav-link" onclick="howToPlay()" href="#">How To Play</a>
                       </li>
                       <li class="nav-item">
                             <a class="nav-link" href="#">About Creator</a>
@@ -34,7 +34,7 @@
                 </div>
   </nav>
 
-<section class="main_game hidden">
+<section class="main_game">
               <div class="main-text">
                 <h1 class="head1">A Game That Will Sharpen your Memory</h1>
                 <h2 class="head2">Dodging Tables</h2>
@@ -59,17 +59,19 @@
     This game will train you with dodging tables. We all learn tables at our earlier classes, But we all tend to forget them, and with extensive use of calculators, we just avoid tables because we can do multiplication with calculator anyway.
   </p>
   <p>
-    This game consists of 4 modes, namely - Easy, Intermediate, Hard and God.
+    This game consists of 4 modes, namely - Easy, Intermediate, Hard and God.<br>
+    If Time is up, you lose.
+    If you enter incorrect answer, however , you are given 3 chances to stay in the game, after 3 wrong answers, you lose again.
   </p>
   <dl>
     <dt>Easy</dt>
-    <dd>This mode is for Kids upto 5th Standard. It consists questions from multiplication tables of range 2 to 10. 10s are granted for every question, so there's time associated with this game (that is why it is called Dodging tables).</dd>
+    <dd>This mode is for Kids upto 5th Standard. It consists questions from multiplication tables of range 2 to 10. 10 seconds are granted for every question, so there's time associated with this game (that is why it is called Dodging tables).</dd>
     <dt>Intermediate</dt>
-    <dd>This mode is for kids upto 10th standard, It consists questions from multiplication tables of range 2 to 20. 7s are granted for every question. </dd>
+    <dd>This mode is for kids upto 10th standard, It consists questions from multiplication tables of range 2 to 20. 7 seconds are granted for every question. </dd>
     <dt>Hard</dt>
-    <dd>This mode is for kids upto 12th standard, It consists questions from multiplication tables of range 12 to 25. 5s are granted for every question. </dd>
+    <dd>This mode is for kids upto 12th standard, It consists questions from multiplication tables of range 12 to 25. 5 seconds are granted for every question. </dd>
     <dt>God</dt>
-    <dd>This mode is for people who are memory champions, or want to be.<br>It consists questions from multiplication tables of range 25 to 50. 5s are granted for every question. </dd>
+    <dd>This mode is for people who are memory champions, or want to be.<br>It consists questions from multiplication tables of range 25 to 50. 5 seconds are granted for every question. </dd>
   </dl>
 
   <h5>
@@ -86,45 +88,64 @@
   <span class="display_timer"><span id="timer_js"></span>s</span>
   </div>
   <div style="text-align: center; font-size: 20px; font-weight: 900;">Question <span class="question-number"></span></div>
+  <div style="text-align: center; font-size: 12px;">Chances Left : <span class="wrong-left">3</span></div>
   <div class="question">
     <span class="num1"></span> x <span class="num2"></span>
   </div>
 
-  <div class="answer_box"><input type="number" placeholder="Enter Answer Here"></div>
+  <div class="answer_box"><input type="number" autofocus placeholder="Enter Answer Here"></div>
 
 </section>
 
-<section class="lose-game">
-  <div class="actual_game">
+<section class="lose-game hidden">
+  <div class="actual_game lose-banner">
       <h1>
           You Lose
         </h1>
-      
+      <div class="grid2">
         <span class="">
           Score: <span class="score"></span>
         </span>
       
-        <span class=""> 
+        <span class="level-box"> 
           Level: <span class="level"></span>
         </span>
+
+      </div>
+        
       
-        <p class="status"></p>
+        <p class="status">You didn't answer in time.</p>
       
-        <a class="restart_button">Restart</a>
+        <a href="index.html" class="restart-button">Restart</a>
 
   </div>
-  
-
 </section>
 
-<section class="scoreboard">
+<section class="scoreboard hidden">
+  <div class="actual_game lose-banner">
+    <h1>
+        You Win!
+      </h1>
+    <div class="grid2">
+      <span class="">
+        Score: <span class="score"></span>
+      </span>
+    
+      <span class="level-box"> 
+        Level: <span class="level"></span>
+      </span>
 
+    </div>
+      <p class="status">Easy Peezy Lemon Squeezy!<br> Ready For another challenge?</p>
+      <a href="index.html" class="mainmenu ">Main Menu</a>
+
+</div>
 </section>
 
 
-<!-- <footer>
+<footer>
                 Pulkit Sharma. All Rights Reserved. 2019.
-   </footer> -->
+   </footer>
 
 <script src="javascript.js" type="text/javascript"></script>
 </body>
