@@ -54,15 +54,7 @@ li{
     font-size: 20px;
 }
 
-footer{
-    height: 40px;
-    background-color: $text_blue;
-    color: $snow_white;
-    text-align: center;
-    padding: 8px 0px;
-    width: 100vw;
-    font-size: 15px;
-}
+
 
 .main-text{
     margin: 100px 50px 50px 50px;
@@ -439,12 +431,7 @@ ul,li{
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
-    footer{
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right:0;
-    }
+   
 
     .mainmenu{
         width: 250px;
