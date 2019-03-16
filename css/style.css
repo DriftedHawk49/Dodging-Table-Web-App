@@ -456,16 +456,16 @@ ul, li {
   .actual_game {
     margin-top: 70px;
   }
-  footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
   .mainmenu {
     width: 250px;
     font-size: 30px;
