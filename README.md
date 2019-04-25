@@ -9,7 +9,7 @@ Game consists of 4 modes,
 1. Easy – Multiplication Tables upto 10.
 2. Intermediate – Multiplication Tables upto 20.
 3. Expert – Multiplication Tables ranging from 12 to 25.
-4. God - Multiplication Tables randing from 25 to 50. 
+4. God - Multiplication Tables ranging from 25 to 50. 
 
 ### Easy Mode
 In easy mode, there are total 2 waves. 1st wave will contain 25 questions of multiplication tables ranging from 2 to 5.<br>
