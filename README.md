@@ -13,7 +13,7 @@ Game consists of 4 modes,
 
 ### Easy Mode
 In easy mode, there are total 2 waves. 1st wave will contain 25 questions of multiplication tables ranging from 2 to 5.<br>
-In Wave 2, 50 questions, multiplication tables randing from 2 to 10. Time given to answer each question – 10 seconds.
+In Wave 2, 50 questions, multiplication tables ranging from 2 to 10. Time given to answer each question – 10 seconds.
 It is design for primary level kids.
 
 ### Intermediate Mode
