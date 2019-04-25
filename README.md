@@ -35,7 +35,7 @@ Time given to answer each question - 5 seconds.
 ## How To Play
 You need to answer each question within time limit. If you fail to answer in time limit, you'll lose. However, if you give a wrong answer within time limit, you will be given 3 chances. If you give 4 wrong answers, you'll lose. Every right answer will score +1, every answer will score +0.
 
-# Technical Details
+## Technical Details
 
 ### Languages Used
 * HTML 5
