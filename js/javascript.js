@@ -1,5 +1,3 @@
-
-
 var questionArray = [];
 var level;
 var questionNumber = 0;
@@ -13,7 +11,7 @@ var fiveSecondsClock = ['assets/5s_clock/zero.png','assets/5s_clock/one.png','as
 var sevenSecondsClock = ['assets/7s_clock/zero.png','assets/7s_clock/one.png','assets/7s_clock/two.png','assets/7s_clock/three.png','assets/7s_clock/four.png','assets/7s_clock/five.png','assets/7s_clock/six.png','assets/7s_clock/seven.png'];
 var tenSecondsClock = ['assets/10s_clock/zero.png','assets/10s_clock/one.png','assets/10s_clock/two.png','assets/10s_clock/three.png','assets/10s_clock/four.png','assets/10s_clock/five.png','assets/10s_clock/six.png','assets/10s_clock/seven.png','assets/10s_clock/eight.png','assets/10s_clock/nine.png','assets/10s_clock/ten.png'];
 
-//  TO GENERATE RANDOM NUMBERS AND RETURN AN ARRAY 
+//  TO GENERATE RANDOM NUMBERS AND RETURN AN ARRAY
 
 function randomGenerator(max, min){
 	var n1 = Math.random()*(max+1-min)+min;
@@ -31,7 +29,7 @@ function pushQuestion(max,min,current,limit){
 	}
 }
 
-// TO FILL QUESTION ARRAY ACCORDING TO LEVEL - 
+// TO FILL QUESTION ARRAY ACCORDING TO LEVEL -
 
 // LVL - EASY
 
@@ -294,13 +292,13 @@ function easyWave1Game(){
 		answer = questionArray[0][0]*questionArray[0][1];
 
 		var timer0 = setInterval(()=>{
-			
+
 			var userAns = $('.answer_box')[0].firstChild.value;
 			if(userAns==""){
 				console.log("You did not enter anything. You lose");
 				clearInterval(timer0);
 				endGame("timeup");
-			}	
+			}
 			else if(answer!=parseInt(userAns)){
 				ansWrong+=1;
 				console.log("That was wrong answer.");
@@ -336,8 +334,8 @@ function easyWave1Game(){
 				questionNumber+=1;
 				updateQuestionNumber(questionNumber);
 			}
-			
-			
+
+
 
 		},timer);
 }
@@ -358,13 +356,13 @@ function easyWave2Game(){
 		answer = questionArray[0][0]*questionArray[0][1];
 
 		var timer0 = setInterval(()=>{
-			
+
 			var userAns = $('.answer_box')[0].firstChild.value;
 			if(userAns==""){
 				console.log("You did not enter anything. You lose");
 				clearInterval(timer0);
 				endGame("timeup");
-			}	
+			}
 			else if(answer!=parseInt(userAns)){
 				ansWrong+=1;
 				console.log("That was wrong answer.")
@@ -400,8 +398,8 @@ function easyWave2Game(){
 				questionNumber+=1;
 				updateQuestionNumber(questionNumber);
 			}
-			
-			
+
+
 
 		},timer);
 }
@@ -431,7 +429,7 @@ function intWave1Game(){
 			console.log("You did not enter anything. You lose");
 			clearInterval(timer0);
 			endGame("timeup");
-		}	
+		}
 		else if(answer!=parseInt(userAns)){
 			ansWrong+=1;
 			console.log("That was wrong answer.")
@@ -495,7 +493,7 @@ function intWave2Game(){
 			console.log("You did not enter anything. You lose");
 			clearInterval(timer0);
 			endGame("timeup");
-		}	
+		}
 		else if(answer!=parseInt(userAns)){
 			ansWrong+=1;
 			console.log("That was wrong answer.")
@@ -559,7 +557,7 @@ function intWave3Game(){
 			console.log("You did not enter anything. You lose");
 			clearInterval(timer0);
 			endGame("timeup");
-		}	
+		}
 		else if(answer!=parseInt(userAns)){
 			ansWrong+=1;
 			console.log("That was wrong answer.")
@@ -623,7 +621,7 @@ function intWave4Game(){
 			console.log("You did not enter anything. You lose");
 			clearInterval(timer0);
 			endGame("timeup");
-		}	
+		}
 		else if(answer!=parseInt(userAns)){
 			ansWrong+=1;
 			console.log("That was wrong answer.")
@@ -689,7 +687,7 @@ function hardWave1Game(){
 			console.log("You did not enter anything. You lose");
 			clearInterval(timer0);
 			endGame("timeup");
-		}	
+		}
 		else if(answer!=parseInt(userAns)){
 			ansWrong+=1;
 			console.log("That was wrong answer.")
@@ -753,7 +751,7 @@ function hardWave2Game(){
 			console.log("You did not enter anything. You lose");
 			clearInterval(timer0);
 			endGame("timeup");
-		}	
+		}
 		else if(answer!=parseInt(userAns)){
 			ansWrong+=1;
 			console.log("That was wrong answer.")
@@ -817,7 +815,7 @@ function hardWave3Game(){
 			console.log("You did not enter anything. You lose");
 			clearInterval(timer0);
 			endGame("timeup");
-		}	
+		}
 		else if(answer!=parseInt(userAns)){
 			ansWrong+=1;
 			console.log("That was wrong answer.")
@@ -885,7 +883,7 @@ function godWave1Game(){
 			console.log("You did not enter anything. You lose");
 			clearInterval(timer0);
 			endGame("timeup");
-		}	
+		}
 		else if(answer!=parseInt(userAns)){
 			ansWrong+=1;
 			console.log("That was wrong answer.")
@@ -949,7 +947,7 @@ function godWave2Game(){
 			console.log("You did not enter anything. You lose");
 			clearInterval(timer0);
 			endGame("timeup");
-		}	
+		}
 		else if(answer!=parseInt(userAns)){
 			ansWrong+=1;
 			console.log("That was wrong answer.")
@@ -1013,7 +1011,7 @@ function godWave3Game(){
 			console.log("You did not enter anything. You lose");
 			clearInterval(timer0);
 			endGame("timeup");
-		}	
+		}
 		else if(answer!=parseInt(userAns)){
 			ansWrong+=1;
 			console.log("That was wrong answer.")
@@ -1057,7 +1055,7 @@ function godWave3Game(){
 
 
 function howToPlay(){
-	
+
 	if(!($(".main_game").hasClass("hidden"))){
 		$(".main_game").addClass("hidden");
 	}
@@ -1100,6 +1098,4 @@ $('.level-btn').on('click',function(obj){
 		$('.level_indicator').addClass('god_badge');
 		godWave1Game();
 	}
-
-
 });
